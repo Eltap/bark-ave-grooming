@@ -14,15 +14,18 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
   color: var(--text);
-  background: var(--cream);
+  background-color: var(--cream);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='%230d9488' fill-opacity='0.05'%3E%3Cellipse cx='36' cy='46' rx='11' ry='9'/%3E%3Cellipse cx='23' cy='30' rx='5' ry='6'/%3E%3Cellipse cx='35' cy='22' rx='5.2' ry='6.5'/%3E%3Cellipse cx='48' cy='27' rx='4.8' ry='6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 72px 72px;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: "Baloo 2", "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
   color: var(--teal-dark);
   margin-top: 0;
 }
@@ -114,7 +117,18 @@ nav a:hover {
     repeating-linear-gradient(120deg, #0d9488, #0d9488 50px, #14b8a6 50px, #14b8a6 100px);
   color: white;
   text-align: center;
-  padding: 100px 20px 90px;
+  padding: 100px 20px 140px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: block;
 }
 
 .hero h1 {
@@ -213,7 +227,7 @@ section {
 .card {
   background: white;
   padding: 28px 22px;
-  border-radius: 14px;
+  border-radius: 26px;
   box-shadow: 0 4px 14px rgba(15, 61, 58, 0.08);
   text-align: center;
 }
@@ -250,7 +264,7 @@ section {
 
 .gallery-item {
   background: repeating-linear-gradient(135deg, #cdeee8, #cdeee8 20px, #daf3ee 20px, #daf3ee 40px);
-  border-radius: 8px;
+  border-radius: 20px;
   height: 180px;
   display: flex;
   align-items: center;
@@ -271,7 +285,7 @@ section {
 .testimonial {
   background: white;
   padding: 24px 22px;
-  border-radius: 14px;
+  border-radius: 26px;
   box-shadow: 0 4px 14px rgba(15, 61, 58, 0.08);
 }
 
@@ -325,7 +339,7 @@ form {
   gap: 16px;
   background: rgba(255, 255, 255, 0.06);
   padding: 26px;
-  border-radius: 14px;
+  border-radius: 28px;
   max-width: 560px;
   margin: 0 auto;
 }
@@ -339,7 +353,7 @@ input,
 select {
   padding: 12px;
   border: 1px solid #2c5854;
-  border-radius: 6px;
+  border-radius: 10px;
   font-family: inherit;
   font-size: 1rem;
   background: white;
@@ -429,7 +443,7 @@ footer .social a {
   }
 
   .hero {
-    padding: 70px 20px 60px;
+    padding: 70px 20px 90px;
   }
 
   .hero h1 {
